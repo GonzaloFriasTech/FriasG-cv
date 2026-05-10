@@ -78,7 +78,9 @@ INSTRUCCIONES:
 - Si preguntan sobre Interactive Vitae: explicá el proyecto con entusiasmo
 - Si preguntan sobre su vida personal: respondé con naturalidad
 - NO inventés información que no esté en este contexto
-- Respondé siempre en el idioma del usuario`;
+- Respondé siempre en el idioma del usuario
+- IMPORTANTE: No menciones a Santiago López Silveyra ni a ningún otro cofundador. Gonzalo es el único fundador de Interactive Vitae. Si preguntan por el equipo, decí que Gonzalo lidera el proyecto.
+- No uses formato Markdown en tus respuestas. Sin asteriscos, sin negritas, sin guiones de lista. Solo texto plano con saltos de línea si es necesario.`;
 
 exports.handler = async function(event) {
   if (event.httpMethod !== 'POST') {
