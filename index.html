@@ -45,7 +45,7 @@
     .btn-toggle { background: transparent; color: var(--text-dark); border: 1.5px solid rgba(0,0,0,0.18); border-radius: 8px; padding: 6px 12px; font-size: 0.85rem; font-weight: 500; font-family: inherit; cursor: pointer; transition: border-color .2s; white-space: nowrap; }
     .btn-toggle:hover { border-color: var(--navy); }
     .nav-hamburger { display: none; background: transparent; color: var(--text-dark); border: 1.5px solid rgba(0,0,0,0.18); border-radius: 8px; padding: 6px 10px; font-size: 1.1rem; cursor: pointer; line-height: 1; }
-    .nav-mobile-dropdown { display: none; position: fixed; top: 56px; left: 0; right: 0; z-index: 9999; background: var(--nav-bg); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 8px 16px 16px; flex-direction: column; }
+    .nav-mobile-dropdown { display: none; position: fixed; top: 56px; left: 0; right: 0; z-index: 10002; background: var(--nav-bg); border-bottom: 1px solid var(--border); padding: 8px 16px 16px; flex-direction: column; }
     .nav-mobile-dropdown.open { display: flex; }
     .nav-mobile-dropdown a { font-size: 0.9rem; font-weight: 400; color: var(--navy); text-decoration: none; padding: 10px 8px; border-radius: 6px; transition: background .2s; }
     .nav-mobile-dropdown a:hover { background: rgba(0,0,0,0.04); }
@@ -181,6 +181,20 @@
       .skills-grid, .sobre-grid { grid-template-columns: 1fr; }
       section { padding: 64px 0; }
       footer { padding: 20px 16px; flex-direction: column; gap: 12px; text-align: center; }
+      .chat-input, .chat-panel-input { font-size: 16px !important; }
+    }
+    @media (max-width: 768px) {
+      #progress-bar {
+        display: block;
+        position: fixed;
+        top: 56px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background: #1a2f6e;
+        z-index: 10003;
+        transition: width 0.1s ease;
+      }
     }
 
     /* ============================================================
@@ -313,6 +327,7 @@
     </div>
   </div>
 </nav>
+<div id="progress-bar"></div>
 <div class="nav-mobile-dropdown" id="mobile-menu">
   <a href="#experience" class="mobile-nav-link" data-i18n="nav.exp">Experiencia</a>
   <a href="#skills" class="mobile-nav-link" data-i18n="nav.skills">Skills</a>
@@ -348,15 +363,17 @@
     <!-- Interactive Vitae -->
     <div class="exp-company fade-in">
       <div class="exp-company-header">
-        <div class="company-icon" style="background:transparent;padding:0"><img src="favicon-general.png" alt="Interactive Vitae" style="width:40px;height:40px;object-fit:contain;border-radius:8px" /></div>
-        <div>
-          <div class="company-name">Interactive Vitae</div>
-          <div class="company-period" data-i18n="exp.iv.period">Marzo 2026 — Presente · AI-Powered Interactive CVs</div>
-        </div>
+        <a href="https://interactivevitae.com/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;">
+          <div class="company-icon" style="background:transparent;padding:0"><img src="favicon-general.png" alt="Interactive Vitae" style="width:40px;height:40px;object-fit:contain;border-radius:8px" /></div>
+          <div>
+            <div class="company-name">Interactive Vitae</div>
+            <div class="company-period" data-i18n="exp.iv.period">Marzo 2026 — Presente · AI-Powered Interactive CVs</div>
+          </div>
+        </a>
       </div>
       <div class="exp-role">
         <div class="role-header">
-          <span class="role-title" data-i18n="exp.iv.role">CEO &amp; Co-Founder</span>
+          <span class="role-title" data-i18n="exp.iv.role">Founder</span>
           <span class="role-date">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             <span data-i18n="exp.iv.date">Mar 2026 — Presente</span>
@@ -375,11 +392,13 @@
     <!-- Avenida+ -->
     <div class="exp-company fade-in">
       <div class="exp-company-header">
-        <div class="company-icon">🛒</div>
-        <div>
-          <div class="company-name">Avenida+</div>
-          <div class="company-period" data-i18n="exp.av.period">Marzo 2024 — Presente · E-commerce &amp; Marketplace Solutions</div>
-        </div>
+        <a href="https://avenidamas.com/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;">
+          <div class="company-icon">🛒</div>
+          <div>
+            <div class="company-name">Avenida+</div>
+            <div class="company-period" data-i18n="exp.av.period">Marzo 2024 — Presente · E-commerce &amp; Marketplace Solutions</div>
+          </div>
+        </a>
       </div>
       <div class="exp-role">
         <div class="role-header">
@@ -434,11 +453,13 @@
     <!-- Vail Resorts -->
     <div class="exp-company fade-in">
       <div class="exp-company-header">
-        <div class="company-icon">⛷️</div>
-        <div>
-          <div class="company-name">Vail Resorts</div>
-          <div class="company-period" data-i18n="exp.vail.period">Dic 2022 — Abr 2023 · Tourism &amp; Hospitality</div>
-        </div>
+        <a href="https://www.vailresorts.com/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;">
+          <div class="company-icon">⛷️</div>
+          <div>
+            <div class="company-name">Vail Resorts</div>
+            <div class="company-period" data-i18n="exp.vail.period">Dic 2022 — Abr 2023 · Tourism &amp; Hospitality</div>
+          </div>
+        </a>
       </div>
       <div class="exp-role">
         <div class="role-header">
@@ -486,7 +507,7 @@
           <li data-i18n="skills.c2.i2">Expansión regional LATAM</li>
           <li data-i18n="skills.c2.i3">Coordinación de equipos multidisciplinarios</li>
           <li data-i18n="skills.c2.i4">Onboarding de clientes y sellers</li>
-          <li data-i18n="skills.c2.i5">Roadmap y gestión de proyectos (Gantt)</li>
+          <li data-i18n="skills.c2.i5">Roadmap y gestión de proyectos</li>
         </ul>
       </div>
       <div class="skill-card fade-in">
@@ -494,10 +515,11 @@
         <h3 data-i18n="skills.c3.title">Herramientas &amp; Análisis</h3>
         <ul class="skill-list">
           <li data-i18n="skills.c3.i1">LinkedIn Sales Navigator &amp; Dripify</li>
-          <li data-i18n="skills.c3.i2">Análisis de bases de datos comerciales</li>
+          <li data-i18n="skills.c3.i2">Análisis de bases de datos</li>
           <li data-i18n="skills.c3.i3">Automatización de ventas</li>
           <li data-i18n="skills.c3.i4">Revisión y análisis de contratos</li>
           <li data-i18n="skills.c3.i5">Inglés avanzado (IELTS certificado)</li>
+          <li data-i18n="skills.c3.i6">Claude Code</li>
         </ul>
       </div>
     </div>
@@ -649,7 +671,7 @@
       },
       exp: {
         label: 'Carrera', title: 'Experiencia Profesional',
-        iv: { period: 'Marzo 2026 — Presente · AI-Powered Interactive CVs', role: 'CEO & Co-Founder', date: 'Mar 2026 — Presente', desc: 'Fundé Interactive Vitae para transformar la forma en que los profesionales presentan su carrera. Creamos CVs interactivos con IA integrada que permiten a reclutadores conversar con el perfil, explorar la experiencia y evaluar fit en tiempo real — todo desde un link.' },
+        iv: { period: 'Marzo 2026 — Presente · AI-Powered Interactive CVs', role: 'Founder', date: 'Mar 2026 — Presente', desc: 'Fundé Interactive Vitae para transformar la forma en que los profesionales presentan su carrera. Creamos CVs interactivos con IA integrada que permiten a reclutadores conversar con el perfil, explorar la experiencia y evaluar fit en tiempo real — todo desde un link.' },
         av: {
           period: 'Marzo 2024 — Presente · E-commerce & Marketplace Solutions',
           role1: 'Business Lead / Country Lead – Panamá & Colombia', date1: 'Ene 2026 — Presente',
@@ -667,8 +689,8 @@
         title: 'Capacidades Principales',
         subtitle: 'Habilidades desarrolladas en ventas B2B, expansión de negocios y gestión de proyectos en LATAM.',
         c1: { title: 'Ventas & Negocios', i1: 'Estrategia comercial B2B', i2: 'Negociación con instituciones financieras', i3: 'Generación de nuevas oportunidades', i4: 'Elaboración de propuestas comerciales', i5: 'Gestión de clientes estratégicos' },
-        c2: { title: 'Proyectos & Expansión', i1: 'Lanzamiento de marketplaces', i2: 'Expansión regional LATAM', i3: 'Coordinación de equipos multidisciplinarios', i4: 'Onboarding de clientes y sellers', i5: 'Roadmap y gestión de proyectos (Gantt)' },
-        c3: { title: 'Herramientas & Análisis', i1: 'LinkedIn Sales Navigator & Dripify', i2: 'Análisis de bases de datos comerciales', i3: 'Automatización de ventas', i4: 'Revisión y análisis de contratos', i5: 'Inglés avanzado (IELTS certificado)' }
+        c2: { title: 'Proyectos & Expansión', i1: 'Lanzamiento de marketplaces', i2: 'Expansión regional LATAM', i3: 'Coordinación de equipos multidisciplinarios', i4: 'Onboarding de clientes y sellers', i5: 'Roadmap y gestión de proyectos' },
+        c3: { title: 'Herramientas & Análisis', i1: 'LinkedIn Sales Navigator & Dripify', i2: 'Análisis de bases de datos', i3: 'Automatización de ventas', i4: 'Revisión y análisis de contratos', i5: 'Inglés avanzado (IELTS certificado)', i6: 'Claude Code' }
       },
       about: {
         label: 'Más allá del trabajo', title: 'Sobre mí',
@@ -715,7 +737,7 @@
       },
       exp: {
         label: 'Career', title: 'Professional Experience',
-        iv: { period: 'March 2026 — Present · AI-Powered Interactive CVs', role: 'CEO & Co-Founder', date: 'Mar 2026 — Present', desc: 'I founded Interactive Vitae to transform the way professionals present their career. We create interactive CVs with integrated AI that allow recruiters to converse with the profile, explore experience and evaluate fit in real time — all from a link.' },
+        iv: { period: 'March 2026 — Present · AI-Powered Interactive CVs', role: 'Founder', date: 'Mar 2026 — Present', desc: 'I founded Interactive Vitae to transform the way professionals present their career. We create interactive CVs with integrated AI that allow recruiters to converse with the profile, explore experience and evaluate fit in real time — all from a link.' },
         av: {
           period: 'March 2024 — Present · E-commerce & Marketplace Solutions',
           role1: 'Business Lead / Country Lead – Panama & Colombia', date1: 'Jan 2026 — Present',
@@ -734,7 +756,7 @@
         subtitle: 'Skills developed in B2B sales, business expansion and project management in LATAM.',
         c1: { title: 'Sales & Business', i1: 'B2B commercial strategy', i2: 'Negotiation with financial institutions', i3: 'New opportunity generation', i4: 'Commercial proposal development', i5: 'Strategic client management' },
         c2: { title: 'Projects & Expansion', i1: 'Marketplace launches', i2: 'LATAM regional expansion', i3: 'Multidisciplinary team coordination', i4: 'Client and seller onboarding', i5: 'Roadmap and project management (Gantt)' },
-        c3: { title: 'Tools & Analysis', i1: 'LinkedIn Sales Navigator & Dripify', i2: 'Commercial database analysis', i3: 'Sales automation', i4: 'Contract review and analysis', i5: 'Advanced English (IELTS certified)' }
+        c3: { title: 'Tools & Analysis', i1: 'LinkedIn Sales Navigator & Dripify', i2: 'Database analysis', i3: 'Sales automation', i4: 'Contract review and analysis', i5: 'Advanced English (IELTS certified)', i6: 'Claude Code' }
       },
       about: {
         label: 'Beyond work', title: 'About Me',
@@ -1044,6 +1066,13 @@
   // INIT
   // ================================================================
   applyLanguage(currentLang);
+
+  window.addEventListener('scroll', function() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    document.getElementById('progress-bar').style.width = progress + '%';
+  });
 </script>
 </body>
 </html>

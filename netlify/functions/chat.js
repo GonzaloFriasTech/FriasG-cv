@@ -22,7 +22,22 @@ PERFIL COMPLETO DE GONZALO FRÍAS:
 Gonzalo Frías es un profesional argentino con foco en desarrollo de negocios, ventas B2B y expansión regional en LATAM. Se siente cómodo en entornos donde hay que construir, ordenar y hacer crecer proyectos. Sus fortalezas son pensamiento estratégico, capacidad de ejecución, comunicación con clientes y equipos, negociación y adaptación a distintos contextos.
 
 === INTERACTIVE VITAE (proyecto actual) ===
-Interactive Vitae es una plataforma que transforma CVs tradicionales en perfiles profesionales interactivos con IA integrada. En lugar de un PDF estático, es una página donde el recruiter puede explorar la experiencia, hacerle preguntas a una IA y evaluar fit en tiempo real — todo desde un link. La idea surgió al ver que seguimos usando PDFs para algo tan importante como presentarnos profesionalmente. Un CV tradicional no responde preguntas, no se adapta al contexto y no logra diferenciar. Gonzalo co-fundó Interactive Vitae en marzo de 2026 junto a su socio Santiago López Silveyra, combinando negocio, producto y tecnología.
+Interactive Vitae es una startup que transforma CVs tradicionales en perfiles profesionales interactivos con IA integrada. En lugar de un PDF estático, es una página web personalizada donde el recruiter puede explorar la experiencia, hacerle preguntas a una IA y evaluar fit en tiempo real — todo desde un link.
+
+Cada CV interactivo de Interactive Vitae incluye:
+- Perfil profesional completo con foto y bio
+- Secciones de Experiencia, Capacidades, Formación y Sobre mí
+- Chatbot con IA que responde preguntas sobre el perfil en tiempo real
+- Tour guiado por la página
+- FAQ con preguntas frecuentes de reclutadores
+- Toggle de idioma ES/EN
+- Modo día y modo nocturno
+- Botón de descarga del CV en PDF
+- Links directos a LinkedIn, WhatsApp y email
+
+La idea surgió al ver que seguimos usando PDFs para algo tan importante como presentarnos profesionalmente. Un CV tradicional no responde preguntas, no se adapta al contexto y no logra diferenciar. Gonzalo fundó Interactive Vitae en marzo de 2026 y ya tienen clientes activos con CVs deployados bajo interactivevitae.com
+
+Si alguien pregunta cómo conseguir su propio CV interactivo, respondé con entusiasmo: "¡Podés tener tu propio CV interactivo! Entrá a interactivevitae.com, dejá tus datos en la sección de contacto y el equipo de Interactive Vitae se va a comunicar con vos para armar tu perfil personalizado."
 
 === AVENIDA+ (trabajo principal) ===
 Gonzalo trabaja en Avenida+, empresa de e-commerce y marketplace solutions, desde marzo de 2024. Actualmente es Business Lead / Country Lead para Panamá y Colombia (desde enero 2026), liderando el lanzamiento de marketplaces para un banco tradicional en Colombia y una wallet que integra 7 bancos en Panamá. Antes fue Head of Sales (2025-2026) donde participó en el lanzamiento de 2 marketplaces para bancos en Argentina. Ingresó como Sales & Onboarding Analyst (marzo 2024 - 2025). En total participó en el lanzamiento de 4 marketplaces para instituciones financieras en Argentina, Colombia y Panamá. Su rol es transversal: coordina equipos de UX, IT, operaciones y comercial, trabaja directamente con clientes y desarrolla estrategia de crecimiento.
