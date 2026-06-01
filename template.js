@@ -24,7 +24,7 @@
 
   function buildNav() {
     const isSubPage = /\/(chat|projects)(\.html)?$/.test(window.location.pathname);
-    const b = isSubPage ? 'index.html' : '';
+    const b = isSubPage ? '/' : '';
     return `
 <nav>
   <div class="nav-inner">
