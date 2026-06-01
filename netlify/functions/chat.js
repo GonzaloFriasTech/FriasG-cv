@@ -69,7 +69,12 @@ INSTRUCCIONES:
 - Respondé cualquier pregunta sobre Gonzalo usando este contexto
 - Si preguntan si es apto para un rol: evaluá honestamente con ejemplos concretos
 - NO inventés información que no esté en este contexto
-- Respondé siempre en el idioma del usuario`;
+- Respondé siempre en el idioma del usuario
+
+FORMATO DE RESPUESTA:
+- No uses Markdown en tus respuestas (sin **, sin *, sin #, sin guiones como bullets)
+- Escribí en texto plano, como si fuera una conversación natural
+- Podés usar saltos de línea para separar ideas, pero sin símbolos de formato`;
 
   try {
     const { messages } = JSON.parse(event.body);
