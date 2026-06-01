@@ -1,2 +1,12 @@
 [build]
   functions = "netlify/functions"
+
+[[redirects]]
+  from   = "/chat"
+  to     = "/chat.html"
+  status = 200
+
+[[redirects]]
+  from   = "/projects"
+  to     = "/projects.html"
+  status = 200
