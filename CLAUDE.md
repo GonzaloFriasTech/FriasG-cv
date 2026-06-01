@@ -40,7 +40,9 @@
 
 ## Pendiente
 - Notificaciones Telegram cuando alguien usa el chatbot
-- Tour desde subpáginas (funciona en producción, falla en local por restricciones file://)
+- Tour desde subpáginas no funciona en producción (redirect a index.html?tour=1 no dispara el tour)
+- Skills "Herramientas & Análisis": eliminar IELTS (ya está en Educación) y revisar duplicados
+- Revisar y limpiar sección Capacidades Principales en general
 
 ## Errores conocidos
 - En local (file://) el botón Tour desde subpáginas no redirige — es comportamiento esperado del browser, funciona bien en producción

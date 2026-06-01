@@ -37,8 +37,8 @@
       <a href="${b}#sobre-mi" id="nav-formation">Mi Formación</a>
       <a href="${b}#sobre-mi" id="nav-about">Sobre mí</a>
       <a href="${b}#contact" id="nav-contact">Contacto</a>
-      <a href="projects.html" id="nav-projects">Proyectos</a>
-      <a href="chat.html" id="nav-agent">AI Agent</a>
+      <a href="/projects" id="nav-projects">Proyectos</a>
+      <a href="/chat" id="nav-agent">AI Agent</a>
     </div>
     <div class="nav-controls">
       <button class="btn-tour" id="tour-btn">✦ Tour</button>
@@ -54,8 +54,8 @@
   <a href="${b}#sobre-mi" class="mobile-nav-link" id="mnav-formation">Mi Formación</a>
   <a href="${b}#sobre-mi" class="mobile-nav-link" id="mnav-about">Sobre mí</a>
   <a href="${b}#contact" class="mobile-nav-link" id="mnav-contact">Contacto</a>
-  <a href="projects.html" class="mobile-nav-link" id="mnav-projects">Proyectos</a>
-  <a href="chat.html" class="mobile-nav-link" id="mnav-agent">AI Agent</a>
+  <a href="/projects" class="mobile-nav-link" id="mnav-projects">Proyectos</a>
+  <a href="/chat" class="mobile-nav-link" id="mnav-agent">AI Agent</a>
 </div>
 <div id="scroll-progress"></div>`;
   }
@@ -299,7 +299,7 @@
     return `
 <section id="chat-page">
   <div class="chat-page-wrapper">
-  <a href="index.html" class="chat-page-back">← ${l ? 'Volver al perfil' : 'Back to profile'}</a>
+  <a href="/" class="chat-page-back">← ${l ? 'Volver al perfil' : 'Back to profile'}</a>
   <div class="chat-page-container">
     <div class="chat-page-top">
       <div class="chat-page-left">
@@ -373,7 +373,7 @@
     return `
 <section id="projects-page">
   <div class="prj-page-wrapper">
-    <a href="index.html" class="chat-page-back">← ${l ? 'Volver al perfil' : 'Back to profile'}</a>
+    <a href="/" class="chat-page-back">← ${l ? 'Volver al perfil' : 'Back to profile'}</a>
     <div class="prj-page-header">
       <span class="prj-page-pill">${l ? 'PROYECTOS' : 'PROJECTS'}</span>
       <h1 class="prj-page-title">${l ? 'Mis Proyectos con IA' : 'My AI Projects'}</h1>
