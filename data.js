@@ -93,8 +93,8 @@ const CLIENT_DATA = {
           titulo_en: "Customer Service | Instructor",
           fecha_es: "Dic 2022 — Abr 2023",
           fecha_en: "Dec 2022 — Apr 2023",
-          desc_es: "Atención a clientes en inglés en entorno internacional. Adaptación a necesidades individuales con foco en experiencia del cliente. Elaboración de reportes operativos. Participación en capacitaciones continuas.",
-          desc_en: "Customer service in English in an international environment. Adaptation to individual needs with focus on customer experience. Preparation of operational reports. Participation in continuous training.",
+          desc_es: "Atención a clientes en entorno internacional. Adaptación a necesidades individuales con foco en experiencia del cliente. Elaboración de reportes operativos. Participación en capacitaciones continuas.",
+          desc_en: "Customer service in an international environment. Adaptation to individual needs with focus on customer experience. Preparation of operational reports. Participation in continuous training.",
           tags_es: ["Atención al Cliente", "Inglés", "Entorno Internacional", "Reportes Operativos"],
           tags_en: ["Customer Service", "English", "International Environment", "Operational Reports"],
         },
@@ -175,7 +175,7 @@ const CLIENT_DATA = {
 
   proyectos: [
     { nombre: "Interactive Vitae", logo: "logo-iv.png", logo_dark: "logo-dark.png", link: "https://interactivevitae.com", tag_es: "Side Hustle", tag_en: "Side Hustle", desc_es: "Transforma tu historial profesional en una página web interactiva con IA. En vez de un PDF, compartís un link.", desc_en: "Transform your professional history into an interactive AI-powered page. Instead of a PDF, share a link." },
-    { nombre: "The Commerce League", logo: "logo-tcl.png", logo_dark: "logo-tcl-dark.png", link: "https://thecommerceleague.com/", tag_es: "Evento", tag_en: "Event", desc_es: "El primer evento donde los comercios del marketplace bancario se encuentran, crecen y construyen comunidad.", desc_en: "The first event where bank marketplace merchants meet, grow and build community." },
+    { nombre: "The Commerce League", logo: "logo-tcl.png", logo_dark: "logo-tcl-dark.png", link: "https://thecommerceleague.com/", tag_es: "Evento", tag_en: "Event", desc_es: "El primer evento donde los comercios de los marketplaces bancarios se encuentran, crecen y construyen comunidad.", desc_en: "The first event where merchants from bank marketplaces meet, grow and build community." },
     { nombre: "Fer-IA-Dos", logo: "logo-feriados.png", link: "https://fer-ia-dos.netlify.app/fer-ia-dos/app", tag_es: "Tool", tag_en: "Tool", desc_es: "Herramienta gratuita para comparar días festivos de toda LATAM y coordinar equipos regionales.", desc_en: "Free tool to compare public holidays across LATAM and coordinate regional teams." },
   ],
 
